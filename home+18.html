@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à Cervejaria do Pericles Delivery</title>
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--Folha de Stilo-->
+    <link rel="stylesheet" href="home+18.css">
+
+</head>
+
+<body>
+    <nav>
+        <div id="menu">
+            <h1>A Cervejaria</h1>
+            <h1>Nossas Cervejas</h1>
+            <h1>Delivery</h1>
+        </div>
+
+        <div id="carrinho">
+            <h1>Meu Carrinho</h1>
+            <img src="img/carrinho.svg">
+        </div>
+    </nav>    
+
+    <header>
+        <img src="img/cerveja.svg">
+
+        <h2>Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles.<br>
+            Escolha a bebida que mais te agrada:</h2>
+
+    </header>
+    
+    <main>
+        <div>
+            <img id="vinho_img" src="img/vinho_tinto.svg">
+            <h3 id="vinho">Vinho Tinto<br>R$ 80,00</h3>
+            <button class="botao-comprar" data-preco="80" onclick="atualizarValorTotal(80)">Comprar</button>
+        </div>
+
+        <div>
+            <img id="heineken_img" src="img/heineken.svg">
+            <h3 id="heineken">Cerveja Heineken<br>R$ 20,00</h3>
+            <button class="botao-comprar" data-preco="20" onclick="atualizarValorTotal(20)">Comprar</button>
+        </div>
+
+        <div>
+            <img id="guarana_img" src="img/guarana.svg">
+            <h3 id="guarana">Refrigerante Guaraná<br>R$ 10,00</h3>
+            <button class="botao-comprar" data-preco="10" onclick="atualizarValorTotal(10)">Comprar</button>
+        </div>
+    </main>
+
+</body>
+</html>

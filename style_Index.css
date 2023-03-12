@@ -1,0 +1,83 @@
+:root{
+    --fonte_Padrão: 'Raleway';
+    --cor_Fonte: #FFFFFF;
+    --cor_Laranja: #CA7900;
+    --hover: #b8b8b8;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.84);
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1{
+    text-align: center;
+    font-family: var(--fonte_Padrão);
+    color: var(--cor_Fonte);
+    font-size: 270%;
+    font-weight: 700;
+
+    margin-bottom: 10%;
+    margin-top: 3%;
+
+}
+
+header{
+    background-color: var(--cor_Laranja);
+    border-radius: 40px;
+    border: 0;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+header img{
+    width: 12%;
+    margin-top: -5%;
+}
+
+h2{
+  font-family: var(--fonte_Padrão);  
+  color: var(--cor_Fonte);
+  font-weight: 400;
+  font-size: 220%;
+}
+
+#button{
+    display: flex;
+    justify-content: space-between;
+
+    width: 45%;
+    margin-bottom: 5%;
+}
+
+header button{
+    width: 43%;
+    height: 70px;
+
+    background-color: var(--cor_Laranja);
+    border: 9px solid #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+
+    font-family: var(--fonte_Padrão);
+    font-weight: 600;
+    font-size: 170%;
+    color: var(--cor_Fonte);
+    cursor: pointer;
+}
+
+header button:hover{
+    color:var(--hover);
+    border: 9px solid var(--hover);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo à Cervejaria do Pericles Delivery</title>
+    <link href="style_Index.css" rel="stylesheet">
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--Script Confirmação Maior Idade-->
+    <script>
+        function resposta (respost){
+            if(respost==='sim'){
+                window.location.href="home+18.html";
+            }else if(respost==='nao'){
+                window.location.href="home-18.html";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    
+
+    <h1>Bem-vindo à<br>
+        Cervejaria do Pericles Delivery</h1>
+
+    <header>
+        <img src="img/cerveja.svg">
+
+        <h2>Você é maior de 18 anos?</h2>
+
+        <div id="button">
+
+            <button id="sim" onclick="resposta('sim')" >Sim</button>
+
+            <button id="nao" onclick="resposta('nao')" >Não</button> 
+
+        </div>
+
+        </header>    
+
+
+
+</body>
+</html>
