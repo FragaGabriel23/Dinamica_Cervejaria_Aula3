@@ -9,9 +9,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <!--Folha de Stilo-->
+    <link rel="stylesheet" href="home.css">
+
 </head>
+
 <body>
+
+    <nav>
+        <div id="menu">
+            <h1>A Cervejaria</h1>
+            <h1>Nossas Cervejas</h1>
+            <h1>Delivery</h1>
+        </div>
+
+        <div id="carrinho" >
+            <h1>Meu Carrinho</h1>
+            <img src="img/carrinho.svg">
+        </div>
+    </nav>    
+
+    <header>
+        <img src="img/cerveja.svg">
+
+        <h2>Olá!<br>
+            O total a ser pago é: <br>
+            R$ <span id="valor-total"></span>
+        </h2>
+
+    </header>
     
+    <script>
+		// Obtém o valor total a partir da URL
+		const urlParams = new URLSearchParams(window.location.search);
+		const valorTotal = urlParams.get("valorTotal");
+
+		// Exibe o valor total na página do carrinho
+		document.getElementById("valor-total").innerText = valorTotal;
+	</script>
 </body>
 </html>
