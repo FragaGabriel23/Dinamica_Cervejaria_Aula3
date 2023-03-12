@@ -23,7 +23,7 @@
         </div>
 
         <div id="carrinho">
-            <h1>Meu Carrinho</h1>
+            <h1 onclick="irParaCarrinho()">Meu Carrinho</h1>
             <img src="img/carrinho.svg">
         </div>
     </nav>    
@@ -56,5 +56,21 @@
         </div>
     </main>
 
+    <!--Soma Valor Total-->
+    <script>
+		let valorTotal = 0;
+
+		function atualizarValorTotal(preco) {
+			valorTotal += preco;
+		}
+	</script>
+
+    <!--Ir Para Carrinho-->
+    <script>
+		function irParaCarrinho() {
+			
+			window.location.href = "carrinho.html?valorTotal=" + valorTotal.toFixed(2);
+		}
+	</script>
 </body>
 </html>
